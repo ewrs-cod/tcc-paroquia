@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "atendimentos",
+  "info": {
+    "singularName": "atendimento",
+    "pluralName": "atendimentos",
+    "displayName": "Atendimento"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "telefone": {
+      "type": "string"
+    },
+    "endereco": {
+      "type": "text"
+    },
+    "tipo_ajuda": {
+      "type": "string"
+    },
+    "detalhes": {
+      "type": "text"
+    },
+    "info_extra": {
+      "type": "json"
+    },
+    "status3": {
+      "type": "enumeration",
+      "enum": [
+        "novo, em_andamento, concluido"
+      ]
+    }
+  }
+}

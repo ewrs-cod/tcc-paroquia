@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agente_de_pastorals",
+  "info": {
+    "singularName": "agente-de-pastoral",
+    "pluralName": "agente-de-pastorals",
+    "displayName": "Agente de Pastoral"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "telefone": {
+      "type": "string",
+      "required": true
+    },
+    "pastorals": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::pastoral.pastoral",
+      "inversedBy": "agente_de_pastorals"
+    },
+    "comunidade": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::comunidade.comunidade",
+      "inversedBy": "agente_de_pastorals"
+    }
+  }
+}

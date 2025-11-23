@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pastorals",
+  "info": {
+    "singularName": "pastoral",
+    "pluralName": "pastorals",
+    "displayName": "Pastoral"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "descricao": {
+      "type": "blocks"
+    },
+    "agente_de_pastorals": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::agente-de-pastoral.agente-de-pastoral",
+      "mappedBy": "pastorals"
+    },
+    "comunidades": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::comunidade.comunidade",
+      "mappedBy": "pastorals"
+    }
+  }
+}

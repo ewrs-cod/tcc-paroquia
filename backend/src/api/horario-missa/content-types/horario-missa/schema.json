@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "horario_missas",
+  "info": {
+    "singularName": "horario-missa",
+    "pluralName": "horario-missas",
+    "displayName": "HorarioMissa"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dia_semana": {
+      "type": "enumeration",
+      "enum": [
+        "Domingo, ",
+        "Segunda-feira,",
+        "Terça-feira,",
+        "Quarta-feira,",
+        "Quinta-feira,",
+        "Sexta-feira,",
+        "Sábado."
+      ]
+    },
+    "horario": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "text"
+    },
+    "comunidade": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::comunidade.comunidade",
+      "inversedBy": "horario_missas"
+    }
+  }
+}

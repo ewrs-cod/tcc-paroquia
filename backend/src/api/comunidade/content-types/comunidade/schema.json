@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comunidades",
+  "info": {
+    "singularName": "comunidade",
+    "pluralName": "comunidades",
+    "displayName": "Comunidade"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "endereco": {
+      "type": "text",
+      "required": false
+    },
+    "agente_de_pastorals": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::agente-de-pastoral.agente-de-pastoral",
+      "mappedBy": "comunidade"
+    },
+    "pastorals": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::pastoral.pastoral",
+      "inversedBy": "comunidades"
+    },
+    "horario_missas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::horario-missa.horario-missa",
+      "mappedBy": "comunidade"
+    }
+  }
+}

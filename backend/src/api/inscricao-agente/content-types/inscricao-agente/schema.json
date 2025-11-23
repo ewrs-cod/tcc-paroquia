@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inscricao_agentes",
+  "info": {
+    "singularName": "inscricao-agente",
+    "pluralName": "inscricao-agentes",
+    "displayName": "Inscrição Agente"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "telefone": {
+      "type": "string"
+    },
+    "comunidade": {
+      "type": "string"
+    },
+    "pastoral": {
+      "type": "string"
+    },
+    "mensagem": {
+      "type": "string"
+    },
+    "status2": {
+      "type": "enumeration",
+      "enum": [
+        "pendente, aprovado, arquivado"
+      ]
+    }
+  }
+}
