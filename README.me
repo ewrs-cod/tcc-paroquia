@@ -1,0 +1,85 @@
+Paróquia Imaculado Coração de Maria - Sistema Web Integrado
+
+Este projeto é um Trabalho de Conclusão de Curso (TCC) desenvolvido para a gestão pastoral e comunicação digital da Paróquia Imaculado Coração de Maria (Diocese de Piracicaba).
+
+O sistema consiste em uma solução Full Stack moderna, utilizando arquitetura Headless CMS para separar a gestão de conteúdo da interface do usuário, garantindo performance, segurança e escalabilidade.
+
+🚀 Tecnologias Utilizadas
+
+Frontend (Interface Pública)
+
+Next.js 14 (App Router): Framework React para renderização híbrida e SEO otimizado.
+
+TypeScript: Tipagem estática para maior segurança e manutenibilidade do código.
+
+Tailwind CSS: Estilização utilitária para design responsivo e identidade visual sacra.
+
+Zod + React Hook Form: Validação robusta de formulários (Schema Validation).
+
+Lucide React: Biblioteca de ícones leves e modernos.
+
+Swiper.js: Carrosséis interativos e táteis.
+
+Backend (Gestão e API)
+
+Strapi v4 (Headless CMS): Gerenciamento de conteúdo, autenticação e API RESTful.
+
+SQLite: Banco de dados relacional (Ambiente de Desenvolvimento).
+
+Node.js: Ambiente de execução JavaScript server-side.
+
+🛠️ Funcionalidades Implementadas
+
+Gestão de Conteúdo: Painel administrativo para cadastro de Eventos, Horários de Missa e Banners.
+
+Agendamento Online: Formulário inteligente para solicitação de sacramentos e visitas, com lógica condicional.
+
+Cadastro de Agentes: Fluxo de inscrição para novos voluntários pastorais.
+
+Portal da Juventude: Área dedicada aos movimentos jovens da paróquia.
+
+Transparência Financeira: Página explicativa sobre o Dízimo com funcionalidade de PIX "Copia e Cola".
+
+Agenda Dinâmica: Sincronização em tempo real entre o painel da secretaria e a página inicial.
+
+📦 Como Rodar o Projeto
+
+Pré-requisitos
+
+Node.js (Versão LTS 18 ou superior)
+
+NPM ou Yarn
+
+1. Instalação e Execução do Backend (API)
+
+Abra um terminal na raiz do projeto e entre na pasta backend:
+
+cd backend
+npm install
+npm run develop
+
+
+O painel administrativo estará disponível em: http://localhost:1337/admin
+
+2. Instalação e Execução do Frontend (Site)
+
+Em um novo terminal na raiz do projeto, entre na pasta frontend:
+
+cd frontend
+npm install
+npm run dev
+
+
+O site estará disponível em: http://localhost:3000
+
+🔐 Acesso Administrativo (Demo)
+
+O sistema possui controle de acesso baseado em funções (RBAC):
+
+Perfil Padre (Super Admin): Acesso total ao sistema, configurações e usuários.
+
+Perfil Secretaria (Editor): Acesso restrito à gestão de conteúdo e visualização de solicitações.
+
+Desenvolvido por: [Seu Nome]
+Curso: [Seu Curso]
+Ano: 2025
