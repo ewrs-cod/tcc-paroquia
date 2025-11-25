@@ -30,8 +30,7 @@ export default function ContatoPage() {
   });
 
   const onSubmit = async (data: ContatoFormData) => {
-    // Aqui você pode conectar com uma API de envio de email ou salvar no Strapi se quiser
-    console.log("Dados contato:", data);
+    
     await new Promise((resolve) => setTimeout(resolve, 1500));
     setIsSubmitted(true);
   };

@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ... (mantenha os imports do tailwind no topo) ... */
-
 /* Tipografia Personalizada */
 .font-serif {
   font-family: var(--font-cinzel), serif;

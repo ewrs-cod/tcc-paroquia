@@ -18,7 +18,6 @@ import { Clock, MapPin, Heart, ChevronDown, ArrowRight } from "lucide-react";
 const slides = [
   { 
     id: 1, 
-    // IMAGEM ESCOLHIDA (Biblioteca Católica)
     image: "https://images.pexels.com/photos/5418220/pexels-photo-5418220.jpeg",
     title: "Imaculado Coração",
     subtitle: '"No fim, o meu Imaculado Coração triunfará."',

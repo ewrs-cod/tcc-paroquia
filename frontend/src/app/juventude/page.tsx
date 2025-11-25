@@ -51,7 +51,6 @@ export default function JuventudePage() {
             className="absolute inset-0 bg-cover bg-center" 
             style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=60&w=1600&auto=format&fit=crop)' }}
         >
-            {/* Filtro Azul/Roxo para dar um ar mais 'Jovem/Noite' */}
             <div className="absolute inset-0 bg-indigo-900/70 mix-blend-multiply" />
         </div>
         

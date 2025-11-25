@@ -1,7 +1,5 @@
 const API_URL = "http://localhost:1337/api";
 
-// --- INTERFACES (Tipos de dados) ---
-
 export interface Banner {
   id: number;
   titulo: string;

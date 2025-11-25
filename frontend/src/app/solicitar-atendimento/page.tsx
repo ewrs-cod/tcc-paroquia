@@ -222,8 +222,6 @@ export default function SolicitarAtendimentoPage() {
                         {errors.tipo_ajuda && <p className="text-red-600 text-xs mt-1 font-bold">{errors.tipo_ajuda.message}</p>}
                     </div>
 
-                    {/* --- CAMPOS CONDICIONAIS (Baseados nas opções acima) --- */}
-
                     {/* 1. Pede ENDEREÇO se for qualquer tipo de Visita ou Bênção externa */}
                     {["visita_enfermo", "visita_social", "exequias", "bencao_casa", "bencao_comercio"].includes(tipoAjudaSelecionado) && (
                         <div className="bg-red-50 p-6 border-l-4 border-marian-red rounded-r-md animate-fade-in-up shadow-sm">

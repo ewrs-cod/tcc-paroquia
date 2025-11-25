@@ -82,9 +82,7 @@ export default async function Home() {
                       
                       {/* Gradiente para o texto */}
                       <div className="absolute inset-0 bg-gradient-to-t from-marian-blue/95 via-transparent to-transparent opacity-90 group-hover:opacity-80 transition-opacity"></div>
-                      
-                      {/* CORREÇÃO: DATA CENTRALIZADA (Estilo Rosácea) */}
-                      {/* Antes estava 'top-6 right-6', o que cortava na curva. Agora está centralizado. */}
+
                       <div className="absolute top-6 left-1/2 -translate-x-1/2 bg-white/95 backdrop-blur-md rounded-full w-16 h-16 flex flex-col items-center justify-center text-marian-blue shadow-xl border-2 border-marian-gold/20 z-10">
                           <span className="text-xl font-serif font-bold leading-none">{dia}</span>
                           <span className="text-[10px] font-bold uppercase mt-1 tracking-wider">{mes}</span>

@@ -23,7 +23,7 @@ export default function Footer() {
           {/* REDES SOCIAIS LINKADAS */}
           <div className="flex space-x-4">
             <a 
-              href="https://www.facebook.com/share/17fhbkQqay/" // <--- COLOQUE O LINK DO FACEBOOK DA PARÓQUIA AQUI
+              href="https://www.facebook.com/share/17fhbkQqay/"
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-white hover:text-marian-gold transition-colors"
@@ -32,7 +32,7 @@ export default function Footer() {
               <Facebook className="w-5 h-5" />
             </a>
             <a 
-              href="https://www.instagram.com/paroquiaimaculadorc?igsh=eXpuNjQ5dmhzeHVx" // <--- COLOQUE O LINK DO INSTAGRAM DA PARÓQUIA AQUI
+              href="https://www.instagram.com/paroquiaimaculadorc?igsh=eXpuNjQ5dmhzeHVx"
               target="_blank" 
               rel="noopener noreferrer"
               className="text-white hover:text-marian-gold transition-colors"
@@ -41,7 +41,7 @@ export default function Footer() {
               <Instagram className="w-5 h-5" />
             </a>
             <a 
-              href="https://www.youtube.com" // <--- COLOQUE O LINK DO YOUTUBE SE TIVER
+              href="https://www.youtube.com"
               target="_blank" 
               rel="noopener noreferrer"
               className="text-white hover:text-marian-gold transition-colors"

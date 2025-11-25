@@ -26,8 +26,6 @@ export default function HorariosPage() {
     loadDados();
   }, []);
 
-  // LÓGICA INTELIGENTE:
-  // 1. Procura a comunidade que tem "Matriz" ou "Imaculado" no nome para ser o destaque
   const matriz = comunidades.find((c) => 
     c.nome.toLowerCase().includes("matriz") || c.nome.toLowerCase().includes("imaculado")
   );
@@ -87,7 +85,6 @@ export default function HorariosPage() {
                     </div>
                     
                     <div className="divide-y divide-gray-100">
-                        {/* AQUI O CÓDIGO GERA AS LINHAS SOZINHO BASEADO NO BANCO */}
                         {ordenarHorarios(matriz.horario_missas).map((h: any) => (
                             <div key={h.id} className="p-6 flex flex-col md:flex-row justify-between items-center gap-4 hover:bg-red-50/30 transition-colors">
                                 <div className="flex items-center gap-4 w-full md:w-auto">
@@ -107,7 +104,6 @@ export default function HorariosPage() {
                             </div>
                         ))}
                         
-                        {/* Caso não tenha horários cadastrados ainda */}
                         {(!matriz.horario_missas || matriz.horario_missas.length === 0) && (
                             <div className="p-8 text-center text-gray-400">Nenhum horário cadastrado no sistema.</div>
                         )}
@@ -126,7 +122,6 @@ export default function HorariosPage() {
                     </div>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {/* AQUI O CÓDIGO GERA OS CARDS SOZINHO */}
                         {capelas.map((comunidade) => (
                         <div key={comunidade.id} className="bg-white rounded-t-full border border-gray-200 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden group">
                             {/* Cabeçalho colorido da Capela */}

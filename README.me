@@ -1,6 +1,8 @@
 Paróquia Imaculado Coração de Maria - Sistema Web Integrado
 
-Este projeto é um Trabalho de Conclusão de Curso (TCC) desenvolvido para a gestão pastoral e comunicação digital da Paróquia Imaculado Coração de Maria (Diocese de Piracicaba).
+Este projeto é uma Atividade de extensão II projeto final (UNINTER) do curso de Análise e Desenvolvimento de Sistemas 
+
+desenvolvido para a gestão pastoral e comunicação digital da Paróquia Imaculado Coração de Maria (Diocese de Piracicaba).
 
 O sistema consiste em uma solução Full Stack moderna, utilizando arquitetura Headless CMS para separar a gestão de conteúdo da interface do usuário, garantindo performance, segurança e escalabilidade.
 
@@ -72,14 +74,25 @@ npm run dev
 
 O site estará disponível em: http://localhost:3000
 
-🔐 Acesso Administrativo (Demo)
+🔐 Acesso Administrativo
 
-O sistema possui controle de acesso baseado em funções (RBAC):
+Como este projeto utiliza SQLite em ambiente de desenvolvimento (por enquanto, até definir o dóminio e os custos, após isso será migrado para o Post ou Oracle).
 
-Perfil Padre (Super Admin): Acesso total ao sistema, configurações e usuários.
+Ao rodar o projeto pela primeira vez:
 
-Perfil Secretaria (Editor): Acesso restrito à gestão de conteúdo e visualização de solicitações.
+Acesse http://localhost:1337/admin.
 
-Desenvolvido por: [Seu Nome]
-Curso: [Seu Curso]
+O Strapi detectará que é uma nova instalação e pedirá para você criar o Primeiro Usuário Administrador.
+
+Preencha com seus dados para ter acesso total (Super Admin).
+
+Para testar os perfis (Sugestão de teste):
+Após criar seu usuário admin, você pode ir em Settings > Users e criar novos usuários com as roles abaixo para simular os perfis do sistema:
+
+Role Super Admin: Simula o acesso do Pároco (Visão Total).
+
+Role Editor: Simula o acesso da Secretaria (Apenas gestão de conteúdo, sem acesso às configurações técnicas).
+
+Desenvolvido por: [Edson Willian Ricarte Serafim]
+Curso: [Ánalise e Desenvolvimento de Sistemas]
 Ano: 2025

@@ -14,7 +14,7 @@ export default function AParoquiaPage() {
       {/* HEADER INSTITUCIONAL */}
       <div className="relative h-[50vh] flex items-center justify-center overflow-hidden shadow-lg">
         <div className="absolute inset-0 bg-marian-blue">
-             {/* Imagem de fundo: Interior da Igreja ou Altar */}
+
              <Image 
                 src="https://images.unsplash.com/photo-1548625361-888f6969485e?q=60&w=1600&auto=format&fit=crop"
                 alt="Interior da Igreja"

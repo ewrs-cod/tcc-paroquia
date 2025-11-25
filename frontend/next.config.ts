@@ -25,7 +25,7 @@ const nextConfig: NextConfig = {
         port: "1337",
         pathname: "/uploads/**",
       },
-      // Regra para IPv6 (O erro que deu antes)
+      // Regra para IPv6
       {
         protocol: "http",
         hostname: "::1",

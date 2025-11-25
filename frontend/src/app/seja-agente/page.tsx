@@ -7,7 +7,6 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { CheckCircle2, AlertCircle, ChevronRight, Heart, User, MapPin, Phone, Mail } from "lucide-react";
-// NOVA IMPORTAÇÃO PARA O BACKEND
 import { api } from "@/services/api";
 
 // --- PARTE 1: LÓGICA E VALIDAÇÃO (ZOD) ---
@@ -34,23 +33,17 @@ export default function SejaAgentePage() {
     resolver: zodResolver(agenteSchema),
   });
 
-  // --- NOVA LÓGICA DE ENVIO (CORRIGIDA) ---
   const onSubmit = async (data: AgenteFormData) => {
     try {
-      // CORREÇÃO CRÍTICA:
-      // Removemos o campo 'status'. Vamos enviar APENAS os dados do formulário.
-      // O Strapi encarrega-se de colocar o status 'pendente' automaticamente
-      // para evitar o erro de "Invalid key status" ou "status2".
       const payload = {
         ...data
       };
 
       console.log("Enviando payload limpo:", payload);
 
-      // Envia para o Strapi via nossa API
+      // Envia para o Strapi via API
       await api.criarInscricaoAgente(payload);
-      
-      // Se não der erro no 'await', mostramos o sucesso
+
       setIsSubmitted(true);
     } catch (error) {
       console.error("Erro ao salvar:", error);
